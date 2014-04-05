@@ -3,24 +3,27 @@
 	Supersized - Fullscreen Slideshow jQuery Plugin
 	Version : 3.2.7
 	Site	: www.buildinternet.com/project/supersized
-	
+
 	Author	: Sam Dunn
 	Company : One Mighty Roar (www.onemightyroar.com)
 	License : MIT License / GPL License
-	
+
 */
 
 * { margin:0; padding:0; }
 body { background:#111; height:100%; }
 	img { border:none; }
-	
+p {text-align:center; color:white;}
+hr {width:8%; height:2px; background-color:white; color:white; margin-left:auto; margin-right:auto; margin-top:5%; margin-bottom:5%;}
+a {color:white;}
+
 	#supersized-loader { position:absolute; top:50%; left:50%; z-index:0; width:60px; height:60px; margin:-30px 0 0 -30px; text-indent:-999em; background:url(../img/progress.gif) no-repeat center center;}
-	
+
 	#supersized {  display:block; position:fixed; left:0; top:0; overflow:hidden; z-index:-999; height:100%; width:100%; }
 	#supersized img { width:auto; height:auto; position:relative; display:none; outline:none; border:none; }
 	#supersized.speed img { -ms-interpolation-mode:nearest-neighbor; image-rendering: -moz-crisp-edges; }	/*Speed*/
 	#supersized.quality img { -ms-interpolation-mode:bicubic; image-rendering: optimizeQuality; }			/*Quality*/
-		
+
 	#supersized li { display:block; list-style:none; z-index:-30; position:fixed; overflow:hidden; top:0; left:0; width:100%; height:100%; background:#111; }
 	#supersized a { width:100%; height:100%; display:block; }
 	#supersized li.prevslide { z-index:-20; }
@@ -31,30 +34,30 @@ body { background:#111; height:100%; }
 
 
 
-			#demo-block{display:block;	position:relative;	width:100%;	height:100%;	margin:-10px;	padding-left:30%;  padding-top: 15%; margin: 0 auto;}
+			#demo-block{display:block;	position:relative;	width:55%;	height:100%;	margin:-10px;	padding-left:30%;  padding-top: 15%; margin: 2% auto; background-color: rgba(5, 4, 2, 0.65);}
 
 	/* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
+@media only screen
+and (min-device-width : 320px)
 and (max-device-width : 480px) {
 		#demo-block { padding-left:0%;padding-top:0%;}
-		#demo-block img {width:100%;height:100%;}
+		#demo-block img {width:75%;padding:15%;height:100%;}
 }
 
 /* All Smartphones in portrait and landscape ----------- */
-@media only screen 
-and (min-device-width : 320px) 
+@media only screen
+and (min-device-width : 320px)
 and (max-device-width : 480px) {
 		#demo-block { padding-left:0%;padding-top:0%;}
-		#demo-block img {width:100%;height:100%;}
+		#demo-block img {width:75%;padding:15%;height:100%;}
 }
 
 
 /* All Smartphones in portrait ----------- */
-@media only screen 
+@media only screen
 and (max-width : 479px) {
 		#demo-block { padding-left:0%;padding-top:0%;}
-		#demo-block img {width:100%;height:100%;}
+		#demo-block img {width:75%;padding:15%;height:100%;}
 }
 
 /***** ANDROID DEVICES *****/
@@ -63,7 +66,7 @@ and (max-width : 479px) {
 @media only screen
 and (max-width: 241px){
 		#demo-block { padding-left:0%;padding-top:0%;}
-		#demo-block img {width:100%;height:100%;}
+		#demo-block img {width:75%;padding:15%;height:100%;}
 }
 
 /* Android(Samsung Galaxy) in portrait 380 X 685 ----------- */
@@ -71,7 +74,7 @@ and (max-width: 241px){
 and (min-width: 375px)
 and (max-width: 385px){
 		#demo-block { padding-left:0%;padding-top:0%;}
-		#demo-block img {width:100%;height:100%;}
+		#demo-block img {width:75%;padding:15%;height:100%;}
 }
 
 /* Android(Samsung Galaxy) in Landscape 685 X  380 ----------- */
@@ -79,7 +82,7 @@ and (max-width: 385px){
 and (min-width: 680px)
 and (max-width: 690px){
 		#demo-block { padding-left:0%;padding-top:0%;}
-		#demo-block img {width:100%;height:100%;}
+		#demo-block img {width:75%;padding:15%;height:100%;}
 }
 
 /* Kindle Portrait 600 X 1024 ----------- */
@@ -87,7 +90,7 @@ and (max-width: 690px){
 and (min-width: 595px)
 and (max-width: 610px){
 		#demo-block { padding-left:0%;padding-top:0%;}
-		#demo-block img {width:100%;height:100%;}
+		#demo-block img {width:75%;padding:15%;height:100%;}
 }
 
 /* Kindle Landscape 1024 X 600 ----------- */
@@ -95,35 +98,35 @@ and (max-width: 610px){
 and (min-width: 1000px)
 and (max-width: 1030px){
 #demo-block { padding-left:0%;padding-top:0%;}
-		#demo-block img {width:100%;height:100%;}
+		#demo-block img {width:75%;padding:15%;height:100%;}
 }
 
 /***** ALL GENERATION IPADS *****/
 
 /* iPads in portrait and landscape----------- */
-@media only screen 
-and (min-device-width : 768px) 
+@media only screen
+and (min-device-width : 768px)
 and (max-device-width : 1024px) {
 #demo-block { padding-left:0%;padding-top:0%;}
-		#demo-block img {width:100%;height:100%;}  
+		#demo-block img {width:75%;padding:15%;height:100%;}
 }
 
 /* iPad in landscape----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
 and (orientation : landscape) {
 #demo-block { padding-left:0%;padding-top:0%;}
-		#demo-block img {width:100%;height:100%;}
+		#demo-block img {width:75%;padding:15%;height:100%;}
 }
 
 /* iPad in portrait----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
 and (orientation : portrait){
 #demo-block { padding-left:0%;padding-top:0%;}
-		#demo-block img {width:100%;height:100%;}
+		#demo-block img {width:75%;padding:15%;height:100%;}
 }
 
 
@@ -131,34 +134,34 @@ and (orientation : portrait){
 /***** Retina IPAD 3 & 4*****/
 
 /* Retina iPad 3 & 4 in portrait and landscape----------- */
-@media only screen 
-and (min-device-width : 768px) 
+@media only screen
+and (min-device-width : 768px)
 and (max-device-width : 1024px)
 and (-webkit-min-device-pixel-ratio: 2){
 #demo-block { padding-left:0%;padding-top:0%;}
-		#demo-block img {width:100%;height:100%;}
+		#demo-block img {width:75%;padding:15%;height:100%;}
 }
 
 /* Retina iPad 3 & 4 in landscape----------- */
 
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
 and (orientation : landscape)
 and (-webkit-min-device-pixel-ratio: 2){
 #demo-block { padding-left:0%;padding-top:0%;}
-		#demo-block img {width:100%;height:100%;}
+		#demo-block img {width:75%;padding:15%;height:100%;}
 }
 
 /* Retina iPad 3 & 4 in landscape----------- */
 
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
 and (orientation : portrait)
 and (-webkit-min-device-pixel-ratio: 2){
 #demo-block { padding-left:0%;padding-top:0%;}
-		#demo-block img {width:100%;height:100%;}
+		#demo-block img {width:75%;padding:15%;height:100%;}
 }
 
 
@@ -167,32 +170,32 @@ and (-webkit-min-device-pixel-ratio: 2){
 /***** IPAD 1 & 2 (ALSO IPAD MINI)*****/
 
 /* iPad 1 & 2 in portrait and landscape ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
 and (-webkit-min-device-pixel-ratio: 1){
 #demo-block { padding-left:0%;padding-top:0%;}
-		#demo-block img {width:100%;height:100%;}
+		#demo-block img {width:75%;padding:15%;height:100%;}
 }
 
 /* iPad 1 & 2 in landscape ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
 and (orientation : landscape)
 and (-webkit-min-device-pixel-ratio: 1)  {
 #demo-block { padding-left:0%;padding-top:0%;}
-		#demo-block img {width:100%;height:100%;}
+		#demo-block img {width:75%;padding:15%;height:100%;}
 }
 
 /* iPad 1 & 2 in portrait ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait) 
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait)
 and (-webkit-min-device-pixel-ratio: 1){
 #demo-block { padding-left:0%;padding-top:0%;}
-		#demo-block img {width:100%;height:100%;}
+		#demo-block img {width:75%;padding:15%;height:100%;}
 }
 
 /* Only iPhone 4 ----------- */
@@ -200,5 +203,5 @@ and (-webkit-min-device-pixel-ratio: 1){
 only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
 #demo-block { padding-left:0%;padding-top:0%;}
-		#demo-block img {width:100%;height:100%;}
+		#demo-block img {width:75%;padding:15%;height:100%;}
 }
